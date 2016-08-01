@@ -3,5 +3,5 @@
 <img src="<%= @house.img_url %>">
 
 <p>
-  <%= link_to "Back to the Houses", houses_path %>
+  <%= link_to "Back to the Houses", houses_path %> | <%= link_to 'Edit', edit_house_path(@house) %>
 </p>

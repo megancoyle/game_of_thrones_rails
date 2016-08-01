@@ -1,6 +1,21 @@
 <h1>New House</h1>
 
 <%= form_for :house, url: houses_path do |f| %>
+
+<% if @house.errors.any? %>
+   <div id="error_explanation">
+     <h2>
+       <%= pluralize(@house.errors.count, "error") %> prohibited
+       this house from being saved:
+     </h2>
+     <ul>
+       <% @house.errors.full_messages.each do |msg| %>
+         <li><%= msg %></li>
+       <% end %>
+     </ul>
+   </div>
+ <% end %>
+
   <p>
     <%= f.label :name %><br>
     <%= f.text_field :name %>
