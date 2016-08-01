@@ -19,7 +19,7 @@ class HousesController < ApplicationController
     @house = House.new(house_params)
 
     if @house.save
-      redirect_to @house
+      redirect_to @house, notice: "A new house was created."
     else
       render 'new'
     end

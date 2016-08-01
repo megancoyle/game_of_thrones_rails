@@ -66,3 +66,12 @@ body.welcome {
 .house-character img {
     max-width: 300px;
   }
+  
+  .flash {
+    border: 1px solid black;
+    padding: 1em;
+    background: #eee;
+  }
+
+  .alert  { color: red;  }
+  .notice { color: blue; }

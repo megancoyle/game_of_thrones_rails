@@ -19,7 +19,7 @@ class CharactersController < ApplicationController
     @character = Character.new(character_params)
 
     if @character.save
-      redirect_to @character
+      redirect_to @character, notice: "A new character was created."
     else
       render 'new'
     end
