@@ -8,7 +8,17 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class= "<%= controller.controller_name %>" >
+    <header>
+      <div class="container">
+        <div class="logo"><%= link_to 'Game of Thrones', root_path %></div>
+        <nav>
+          <%= link_to 'Houses', houses_path %>  |  <%= link_to 'Characters', characters_path %>
+        </nav>
+      </div>
+  </header>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
