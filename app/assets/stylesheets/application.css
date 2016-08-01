@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative);
+
 body {
   margin: 0;
   padding: 0;
@@ -6,16 +8,21 @@ body {
   max-width: 900px;
   margin: 0 auto;
 }
+h1 {
+  font-family: 'Cinzel Decorative', cursive;
+}
+
 .logo {
   float: left;
-  margin: 10px;
+  margin: 5px;
 }
 
 .logo a {
-  font-size: 1.8em;
+  font-size: 1.7em;
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-family: 'Cinzel Decorative', cursive;
 }
 
 nav a {
@@ -28,14 +35,34 @@ nav a {
 }
 
 header {
-  background: #000033;
+  background: #405372;
   height: 50px;
+  border-bottom: 2px solid #374862;
 }
+.content {
+  padding-top: 20px;
+}
+
 body.welcome {
   background: url('/images/castle.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .welcome h1 {
   text-align: center;
-  margin-top: 20%;
+  margin-top: 25%;
+  font-size: 3.5em;
+  color: white;
+  text-shadow: 2px 2px black;
 }
+
+.house-character {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.house-character img {
+    max-width: 300px;
+  }

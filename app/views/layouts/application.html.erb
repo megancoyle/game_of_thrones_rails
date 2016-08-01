@@ -13,11 +13,12 @@
       <div class="container">
         <div class="logo"><%= link_to 'Game of Thrones', root_path %></div>
         <nav>
-          <%= link_to 'Houses', houses_path %>  |  <%= link_to 'Characters', characters_path %>
+          <%= link_to 'Houses', houses_path %>
+          <%= link_to 'Characters', characters_path %>
         </nav>
       </div>
   </header>
-    <div class="container">
+    <div class="container content">
       <%= yield %>
     </div>
   </body>
