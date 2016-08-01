@@ -3,5 +3,6 @@
 <img src="<%= @house.img_url %>">
 
 <p>
-  <%= link_to "Back to the Houses", houses_path %> | <%= link_to 'Edit', edit_house_path(@house) %>
+  <%= link_to "Back to the Houses", houses_path %> | <%= link_to 'Delete', house_path(@house), method: :delete,
+  data: { confirm: 'Are you sure you want to delete this?'} %> | <%= link_to 'Edit', edit_house_path(@house) %>
 </p>
