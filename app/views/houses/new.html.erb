@@ -5,8 +5,13 @@
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </p>
+  <p>
+    <%= f.label :image_url %><br>
+    <%= f.text_field :img_url %>
+  </p>
 
   <p>
     <%= f.submit %>
   </p>
 <% end %>
+<%= link_to 'Back', houses_path %>
