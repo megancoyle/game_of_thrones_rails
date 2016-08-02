@@ -1,20 +1,17 @@
 class CharactersController < ApplicationController
-  def index
-    @characters = Character.all
-  end
 
   def show
     @character = Character.find(params[:id])
   end
 
   def new
-    @character = Character.new
-    @houses = House.all
+    @house = House.find(params[:house_id])
+    @character = @house.characters.new
   end
 
   def edit
-    @character = Character.find(params[:id])
     @house = House.find(params[:house_id])
+    @character = Character.find(params[:id])
   end
 
   def create
@@ -29,24 +26,24 @@ class CharactersController < ApplicationController
   end
 
   def update
+    @house = House.find(params[:house_id])
     @character = Character.find(params[:id])
 
     if @character.update(character_params)
-      redirect_to @character
+      redirect_to house_character_path(@house, @character)
     else
       render 'edit'
     end
   end
 
   def destroy
-    @house = House.find(params[:house_id])
-    @character = @house.characters.find(params[:id])
+    @character = Character.find(params[:id])
     @character.destroy
-    redirect_to house_path(@house)
+    redirect_to house_path(@character.house)
   end
 
   private
     def character_params
-      params.require(:character).permit(:name, :img_url, :gender, :house_id)
+      params.require(:character).permit(:name, :img_url, :gender)
     end
 end
