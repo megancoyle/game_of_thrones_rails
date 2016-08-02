@@ -9,6 +9,7 @@ class CharactersController < ApplicationController
 
   def new
     @character = Character.new
+    @houses = House.all
   end
 
   def edit

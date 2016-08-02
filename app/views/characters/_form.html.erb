@@ -30,8 +30,8 @@
   </p>
 
   <p>
-    <%= f.label :house_id %><br>
-    <%= f.text_field :house_id %>
+    <%= f.label :house %><br>
+    <%= f.select :house_id, House.all.collect { |p| [ p.name, p.id ] }, include_blank: "Select A House" %>
   </p>
 
   <p>
