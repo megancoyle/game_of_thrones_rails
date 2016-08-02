@@ -70,6 +70,9 @@ body.welcome {
 img.header-house {
   width: 100%;
 }
+img.character-header {
+  width: 100%;
+}
 
 .house-grid {
   max-width: 200px;

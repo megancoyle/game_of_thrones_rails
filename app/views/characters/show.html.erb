@@ -1,6 +1,6 @@
 <h1><%= @character.name %></h1>
 <p><%= @character.gender %></p>
-<img src="<%= @character.img_url %>">
+<img class="character-header" src="<%= @character.img_url %>">
 
 <p>
   <%= link_to "Back to the Characters", characters_path %> | <%= link_to 'Delete', character_path(@character), method: :delete,
