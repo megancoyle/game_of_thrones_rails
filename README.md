@@ -1,24 +1,6 @@
-# README
+# Game of Thrones Rails App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
+View different houses, and also have the ability to add, delete, and update houses. Within each house you have the ability to add characters that you can also edit and delete.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![ScreenShot](castle.jpg)
