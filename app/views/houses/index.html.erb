@@ -2,8 +2,9 @@
 <%= link_to 'New House(+)', new_house_path %>
 <ul>
   <% @houses.each do |house| %>
-  <li>
+  <div class="house-grid">
+    <%= link_to (image_tag house.img_url), house_path(house) %>
     <%= link_to house.name, house_path(house) %>
-  </li>
+  </div>
   <% end %>
 </ul>

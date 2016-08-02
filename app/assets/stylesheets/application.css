@@ -66,12 +66,28 @@ body.welcome {
 .house-character img {
     max-width: 300px;
   }
-  
-  .flash {
-    border: 1px solid black;
-    padding: 1em;
-    background: #eee;
-  }
 
-  .alert  { color: red;  }
-  .notice { color: blue; }
+img.header-house {
+  width: 100%;
+}
+
+.house-grid {
+  max-width: 200px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+  text-align: center;
+}
+.house-grid img {
+  max-width: 100%;
+  display: block;
+}
+
+.flash {
+  border: 1px solid black;
+  padding: 1em;
+  background: #eee;
+}
+
+.alert  { color: red;  }
+.notice { color: blue; }
