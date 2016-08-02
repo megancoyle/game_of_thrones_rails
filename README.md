@@ -1,6 +1,6 @@
 # Game of Thrones Rails App
 
 ## Overview
-View different houses, and also have the ability to add, delete, and update houses. Within each house you have the ability to add characters that you can also edit and delete.
+Ruby on Rails app that implements CRUD functionality on house and character models. Includes links to different paths, forms to add/update records, and has validations, error-handling, and flash. The app also makes use of nested routes.
 
 ![ScreenShot](castle.jpg)
