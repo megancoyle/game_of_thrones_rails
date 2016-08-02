@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
-  resources :characters, :houses
+  resources :houses do
+    resources :characters
+  end
+  
   root 'welcome#index'
 end

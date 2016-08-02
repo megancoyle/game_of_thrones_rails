@@ -3,6 +3,6 @@
 <img class="character-header" src="<%= @character.img_url %>">
 
 <p>
-  <%= link_to "Back to the Characters", characters_path %> | <%= link_to 'Delete', character_path(@character), method: :delete,
-  data: { confirm: 'Are you sure you want to delete this?'} %> | <%= link_to 'Edit', edit_character_path(@character) %>
+  <%= link_to "Back to House", [@character.house, @house] %> | <%= link_to 'Delete', [@character.house, @character], method: :delete,
+  data: { confirm: 'Are you sure you want to delete this?'} %> | <%= link_to 'Edit', edit_house_character_path(@character) %>
 </p>

@@ -17,12 +17,13 @@ class CharactersController < ApplicationController
   end
 
   def create
-    @character = Character.new(character_params)
+    @house = House.find(params[:house_id])
+    @character = @house.characters.create(character_params)
 
     if @character.save
-      redirect_to @character, notice: "A new character was created."
+      redirect_to house_path(@house), notice: "A new character was created."
     else
-      render 'new'
+      redirect_to house_path(@house)
     end
   end
 
@@ -37,9 +38,10 @@ class CharactersController < ApplicationController
   end
 
   def destroy
-    @character = Character.find(params[:id])
+    @house = House.find(params[:house_id])
+    @character = @house.characters.find(params[:id])
     @character.destroy
-    redirect_to characters_path
+    redirect_to house_path(@house)
   end
 
   private
