@@ -14,6 +14,7 @@ class CharactersController < ApplicationController
 
   def edit
     @character = Character.find(params[:id])
+    @house = House.find(params[:house_id])
   end
 
   def create
