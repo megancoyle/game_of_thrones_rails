@@ -33,7 +33,8 @@ character_list = [
   ["Ramsay Bolton", "Male", "/images/characters/ramsay.jpg", 3],
   ["Walder Frey", "Male", "/images/characters/walder.jpg", 4],
   ["Nymeria Sand", "Fmale", "/images/characters/nymeria.jpg", 7],
-  ["Theon Greyjoy", "Male", "/images/characters/theon.jpg", 5]
+  ["Theon Greyjoy", "Male", "/images/characters/theon.jpg", 5],
+  ["Margaery Tyrell", "Female", "/images/characters/margaery.jpg", 11]
 ]
 
 character_list.each do |name, gender, image, house|
