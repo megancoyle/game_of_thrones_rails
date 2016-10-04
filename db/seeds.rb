@@ -32,7 +32,8 @@ character_list = [
   ["Bran Stark", "Male", "/images/characters/bran.jpg", 8],
   ["Ramsay Bolton", "Male", "/images/characters/ramsay.jpg", 3],
   ["Walder Frey", "Male", "/images/characters/walder.jpg", 4],
-  ["Nymeria Sand", "Fmale", "/images/characters/nymeria.jpg", 7],
+  ["Nymeria Sand", "Female", "/images/characters/nymeria.jpg", 7],
+  ["Ellaria Sand", "Female", "/images/characters/ellaria.jpg", 7]
   ["Theon Greyjoy", "Male", "/images/characters/theon.jpg", 5],
   ["Margaery Tyrell", "Female", "/images/characters/margaery.jpg", 11]
 ]
