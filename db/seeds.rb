@@ -27,6 +27,7 @@ character_list = [
   ["John Snow", "Male", "/images/characters/johnsnow.jpg", 8],
   ["Davos Seaworth", "Male", "/images/characters/davos.jpg", 2],
   ["Melisandre", "Female", "/images/characters/melisandre.jpg", 2],
+  ["Tommen Baratheon", "Male", "/images/characters/tommen.jpg", 2],
   ["Sansa Stark", "Female", "/images/characters/sansa.jpg", 8],
   ["Arya Stark", "Female", "/images/characters/arya.jpg", 8],
   ["Bran Stark", "Male", "/images/characters/bran.jpg", 8],
