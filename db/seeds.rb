@@ -39,7 +39,7 @@ character_list = [
   ["Roose Bolton", "Male", "/images/characters/roose.jpg", 3],
   ["Walder Frey", "Male", "/images/characters/walder.jpg", 4],
   ["Nymeria Sand", "Female", "/images/characters/nymeria.jpg", 7],
-  ["Ellaria Sand", "Female", "/images/characters/ellaria.jpg", 7]
+  ["Ellaria Sand", "Female", "/images/characters/ellaria.jpg", 7],
   ["Theon Greyjoy", "Male", "/images/characters/theon.jpg", 5],
   ["Margaery Tyrell", "Female", "/images/characters/margaery.jpg", 11]
 ]
