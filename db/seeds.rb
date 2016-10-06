@@ -107,7 +107,16 @@ character_list = [
   ["Irri", "Female", "/images/characters/irri.jpg", 9],
   ["Rakharo", "Male", "/images/characters/rakharo.jpg", 9],
   ["Edmure Tully", "Male", "/images/characters/edmure.jpg", 10],
-  ["Margaery Tyrell", "Female", "/images/characters/margaery.jpg", 11]
+  ["Brynden Tully", "Male", "/images/characters/brynden.jpg", 10],
+  ["Roslin Frey", "Female", "/images/characters/roslin.jpg", 10],
+  ["Margaery Tyrell", "Female", "/images/characters/margaery.jpg", 11],
+  ["Olenna Tyrell", "Female", "/images/characters/olenna.jpg", 11],
+  ["Mace Tyrell", "Male", "/images/characters/mace.jpg", 11],
+  ["Loras Tyrell", "Male", "/images/characters/loras.jpg", 11],
+  ["Randyll Tarly", "Male", "/images/characters/randyll.jpg", 11],
+  ["Melessa Tarly", "Female", "/images/characters/melessa.jpg", 11],
+  ["Talla Tarly", "Female", "/images/characters/talla.jpg", 11],
+  ["Dickon Tarly", "Male", "/images/characters/dickon.jpg", 11]
 ]
 
 character_list.each do |name, gender, image, house|
